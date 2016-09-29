@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
+  moduleId: module.id,  
   selector: 'cmp-app',
-  template: `
-   <h1>{{title}}</h1>
-   <a routerLink="/heroes">Compétiteurs</a>
-   <router-outlet></router-outlet>
- `
+  templateUrl: 'cmp.component.html',
+  styleUrls: [ 'cmp.component.css' ]
 })
 
 export class CmpComponent {
